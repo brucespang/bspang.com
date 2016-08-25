@@ -10,7 +10,7 @@ cat << EOF > index.html
  <body>
 <h1>Index of /</h1>
   <table>
-   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th>Name</th></tr>
+   <tr><th valign="top"><img src="blank.gif" alt="[ICO]"></th><th>Name</th></tr>
    <tr><th colspan="5"><hr></th></tr>
 EOF
 
