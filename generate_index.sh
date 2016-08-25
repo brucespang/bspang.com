@@ -14,9 +14,9 @@ cat << EOF > index.html
    <tr><th colspan="5"><hr></th></tr>
 EOF
 
-for file in `ls`; do
+find . -type f | grep -v .git | grep -vE "(README.md|.DS_Store)" | while read file; do
     cat << EOF >> index.html
-<tr><td valign="top"><img src="/image2.gif" alt="[IMG]"></td><td><a href="$file">$file</a></td></tr>
+<tr><td valign="top"><img src="/image2.gif" alt="[IMG]"></td><td><a href="$file">`echo $file | sed 's/.\///'`</a></td></tr>
 EOF
 done
 
