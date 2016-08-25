@@ -16,7 +16,7 @@ EOF
 
 for file in `ls`; do
     cat << EOF >> index.html
-<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="$file">$file</a></td></tr>
+<tr><td valign="top"><img src="image2.gif" alt="[IMG]"></td><td><a href="$file">$file</a></td></tr>
 EOF
 done
 
